@@ -1,3 +1,6 @@
+# Raw Data #
+stat_data/
+
 # Django #
 *.log
 *.pot
