@@ -13,7 +13,7 @@ from django.views.generic import (
 class Home(TemplateView):
 
     # Set Template
-    template_name = "website/templates/index.html"
+    template_name = "index.html"
 
     def get(self, request, *args, **kwargs):
         # Process Year Selector Use | Update Dashboard Year
