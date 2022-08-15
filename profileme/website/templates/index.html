@@ -12,7 +12,7 @@
   <div id="primaryForm" class="container">
     <form>
       <div class="mb-3">
-        <label for="Age" class="form-label">Age</label>
+        <label for="age" class="form-label">Current Age:</label>
         <input
           type="age"
           class="form-control"
@@ -21,29 +21,83 @@
         />
       </div>
       <div class="mb-3">
-        <label for="exampleDwellingType" class="form-label"
-          >Where do you sleep?</label
-        >
-        <select class="form-select" aria-label="dwelling type">
-          <option value="1">My Owner Occupied Home</option>
-          <option value="2">My Rented Home</option>
-          <option value="3">My Parent(s) or Gaurdian(s) Home</option>
-          <option value="3">My Friends Home</option>
-          <option value="3">I've No Home</option>
+        <label class="form-label">Current Health:</label>
+        <select class="form-select" aria-label="current health status">
+          <option value="0" selected>No Exercise</option>
+          <option value="1">Minimum Exercise</option>
+          <option value="2">Sick or Overweight</option>
+          <option value="3">Healthy and Fit</option>
         </select>
       </div>
-      <div class="mb-3 form-check">
+      <div class="mb-3">
+        <label class="form-label">Select all that apply to you:</label>
+        <br />
         <input
           type="checkbox"
-          class="form-check-input"
-          id="checkBusinessOwner"
+          class="btn-check"
+          id="btn-check-employeed"
+          autocomplete="off"
         />
-        <label class="form-check-label" for="checkBusinessOwner"
+        <label class="btn btn-outline-primary" for="btn-check-employeed"
+          >Employeed</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-check-bus"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btn-check-bus"
           >Business Owner</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-check-married"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btn-check-married"
+          >Married</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-check-homeowner"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btn-check-homeowner"
+          >Home Owner</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-check-renting"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btn-check-renting"
+          >Renting</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-check-student"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btn-check-student"
+          >Student</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-check-child"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btn-check-child"
+          >Have Children</label
         >
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-success">Submit</button>
     </form>
   </div>
 </section>
