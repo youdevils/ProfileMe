@@ -2,6 +2,19 @@ body {
   background-color: rgb(218, 225, 36);
 }
 
-.masthead {
-  padding-bottom: 10rem;
+.heading {
+  padding: 1rem;
+}
+
+.inputParent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+
+.selectParent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
