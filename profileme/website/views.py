@@ -1,24 +1,28 @@
 from django.shortcuts import render
+from website.forms import PersonForm
 
 from django.views.generic import (
     TemplateView,
     # CreateView,
-    # FormView,
+    FormView,
     # ListView,
     # UpdateView,
     # RedirectView,
 )
 
+class WhoAmI(FormView):
 
-class Home(TemplateView):
-
-    # Set Template
     template_name = "index.html"
+    form_class = PersonForm    
+    success_url = "results/"
+
+    def form_valid(self, form):
+        return super().form_valid(form)
+
+class Results(TemplateView):
+
+    template_name = "results.html"
 
     def get(self, request, *args, **kwargs):
-        # Process Year Selector Use | Update Dashboard Year
-
-        # Package Template Data
         context = super().get_context_data(**kwargs)
-        # context.update() Add Custom Context Data
         return render(request, self.template_name, context=context)
